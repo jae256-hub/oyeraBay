@@ -1,0 +1,359 @@
+{
+  "labourCharge": 20000,
+  "services": [
+    {
+      "id": 1,
+      "name": "Engine Oil & Filter Change",
+      "category": "Maintenance",
+      "description": "Complete engine oil and filter replacement",
+      "duration": "30 minutes",
+      "basePrice": 20000,
+      "applicableVehicles": ["small", "commercial", "heavy"],
+      "requiredParts": [102],
+      "icon": "⚙️"
+    },
+    {
+      "id": 2,
+      "name": "Gearbox Oil & Filter",
+      "category": "Maintenance",
+      "description": "Gearbox oil and filter replacement",
+      "duration": "45 minutes",
+      "basePrice": 20000,
+      "applicableVehicles": ["small", "commercial", "heavy"],
+      "requiredParts": [104],
+      "icon": "🔄"
+    },
+    {
+      "id": 3,
+      "name": "Brake Fluid Replacement",
+      "category": "Safety",
+      "description": "Complete brake fluid system flush and refill",
+      "duration": "40 minutes",
+      "basePrice": 20000,
+      "applicableVehicles": ["small", "commercial", "heavy"],
+      "requiredParts": [105],
+      "icon": "🛑"
+    },
+    {
+      "id": 4,
+      "name": "Brake Pads Change",
+      "category": "Safety",
+      "description": "Front and/or rear brake pad replacement",
+      "duration": "60 minutes",
+      "basePrice": 20000,
+      "applicableVehicles": ["small", "commercial", "heavy"],
+      "requiredParts": [106, 107],
+      "icon": "🛑"
+    },
+    {
+      "id": 5,
+      "name": "Chassis Greasing",
+      "category": "Maintenance",
+      "description": "Complete chassis and suspension greasing",
+      "duration": "30 minutes",
+      "basePrice": 20000,
+      "applicableVehicles": ["small", "commercial", "heavy"],
+      "requiredParts": [108],
+      "icon": "🧴"
+    },
+    {
+      "id": 6,
+      "name": "Wheel Alignment",
+      "category": "Alignment",
+      "description": "4-wheel alignment service",
+      "duration": "90 minutes",
+      "basePrice": 30000,
+      "applicableVehicles": ["small", "commercial", "heavy"],
+      "requiredParts": [],
+      "icon": "⚙️"
+    },
+    {
+      "id": 7,
+      "name": "Wheel Balancing",
+      "category": "Alignment",
+      "description": "Dynamic wheel balancing service",
+      "duration": "45 minutes",
+      "basePrice": 20000,
+      "applicableVehicles": ["small", "commercial", "heavy"],
+      "requiredParts": [],
+      "icon": "🔵"
+    },
+    {
+      "id": 8,
+      "name": "General Inspection",
+      "category": "Inspection",
+      "description": "Complete vehicle safety and performance inspection",
+      "duration": "60 minutes",
+      "basePrice": 20000,
+      "applicableVehicles": ["small", "commercial", "heavy"],
+      "requiredParts": [],
+      "icon": "🔍"
+    },
+    {
+      "id": 9,
+      "name": "Battery Service",
+      "category": "Electrical",
+      "description": "Battery testing, cleaning, and replacement if needed",
+      "duration": "20 minutes",
+      "basePrice": 20000,
+      "applicableVehicles": ["small", "commercial", "heavy"],
+      "requiredParts": [],
+      "icon": "🔋"
+    },
+    {
+      "id": 10,
+      "name": "Suspension Service",
+      "category": "Suspension",
+      "description": "Shock absorbers and suspension component inspection/replacement",
+      "duration": "120 minutes",
+      "basePrice": 20000,
+      "applicableVehicles": ["small", "commercial", "heavy"],
+      "requiredParts": [111],
+      "icon": "🚗"
+    }
+  ],
+  "spareParts": [
+    {
+      "id": 101,
+      "name": "Engine Oil (1L) - Standard",
+      "category": "Oils",
+      "quantity": 150,
+      "price": 79000,
+      "priceRange": "79000-95000",
+      "supplier": "Shell",
+      "reorderLevel": 20,
+      "icon": "🧴"
+    },
+    {
+      "id": 101.5,
+      "name": "Engine Oil (1L) - Premium",
+      "category": "Oils",
+      "quantity": 80,
+      "price": 145000,
+      "priceRange": "145000-200000",
+      "supplier": "Mobil",
+      "reorderLevel": 15,
+      "icon": "🧴"
+    },
+    {
+      "id": 102,
+      "name": "Engine Oil Filter",
+      "category": "Filters",
+      "quantity": 85,
+      "price": 5000,
+      "supplier": "Mann Filter",
+      "reorderLevel": 15,
+      "icon": "⚙️"
+    },
+    {
+      "id": 103,
+      "name": "Gearbox Oil (1L)",
+      "category": "Oils",
+      "quantity": 65,
+      "price": 12000,
+      "supplier": "Shell",
+      "reorderLevel": 10,
+      "icon": "🧴"
+    },
+    {
+      "id": 104,
+      "name": "Gearbox Filter",
+      "category": "Filters",
+      "quantity": 45,
+      "price": 8500,
+      "supplier": "Mann Filter",
+      "reorderLevel": 8,
+      "icon": "⚙️"
+    },
+    {
+      "id": 105,
+      "name": "Brake Fluid (500ml) - Standard",
+      "category": "Fluids",
+      "quantity": 120,
+      "price": 13000,
+      "priceRange": "13000-15000",
+      "supplier": "Bosch",
+      "reorderLevel": 25,
+      "icon": "🛑"
+    },
+    {
+      "id": 105.5,
+      "name": "Brake Fluid (500ml) - Premium",
+      "category": "Fluids",
+      "quantity": 60,
+      "price": 18000,
+      "priceRange": "18000-20000",
+      "supplier": "ATE",
+      "reorderLevel": 15,
+      "icon": "🛑"
+    },
+    {
+      "id": 106,
+      "name": "Brake Pads Set (Front)",
+      "category": "Brake Parts",
+      "quantity": 92,
+      "price": 35000,
+      "supplier": "Bosch",
+      "reorderLevel": 15,
+      "icon": "🛑"
+    },
+    {
+      "id": 107,
+      "name": "Brake Pads Set (Rear)",
+      "category": "Brake Parts",
+      "quantity": 78,
+      "price": 32000,
+      "supplier": "Bosch",
+      "reorderLevel": 12,
+      "icon": "🛑"
+    },
+    {
+      "id": 108,
+      "name": "Chassis Grease (500g)",
+      "category": "Grease",
+      "quantity": 200,
+      "price": 4500,
+      "supplier": "Mobil",
+      "reorderLevel": 30,
+      "icon": "🧴"
+    },
+    {
+      "id": 109,
+      "name": "Air Filter",
+      "category": "Filters",
+      "quantity": 110,
+      "price": 3500,
+      "supplier": "Mann Filter",
+      "reorderLevel": 20,
+      "icon": "⚙️"
+    },
+    {
+      "id": 110,
+      "name": "Cabin Air Filter",
+      "category": "Filters",
+      "quantity": 95,
+      "price": 2500,
+      "supplier": "Mann Filter",
+      "reorderLevel": 15,
+      "icon": "⚙️"
+    },
+    {
+      "id": 111,
+      "name": "Shock Absorber (Each)",
+      "category": "Suspension",
+      "quantity": 34,
+      "price": 85000,
+      "supplier": "KYB",
+      "reorderLevel": 5,
+      "icon": "🚗"
+    },
+    {
+      "id": 112,
+      "name": "Spark Plug Set",
+      "category": "Electrical",
+      "quantity": 56,
+      "price": 15000,
+      "supplier": "NGK",
+      "reorderLevel": 10,
+      "icon": "⚡"
+    }
+  ],
+  "wheelServices": [
+    {
+      "id": 201,
+      "name": "Wheel Alignment",
+      "description": "4-wheel alignment service",
+      "price": 30000,
+      "icon": "⚙️",
+      "duration": "60 minutes"
+    },
+    {
+      "id": 202,
+      "name": "Wheel Balancing",
+      "description": "Dynamic wheel balancing per axle",
+      "price": 20000,
+      "icon": "🔵",
+      "duration": "30 minutes"
+    }
+  ],
+  "technicians": [
+    {
+      "id": 1,
+      "name": "John Okello",
+      "email": "john.okello@oyerabay.com",
+      "employeeId": "EMP001",
+      "role": "senior",
+      "specialties": ["Engine Oil & Filter Change", "Battery Service", "General Inspection"],
+      "status": "available",
+      "hoursWorked": 0,
+      "servicesCompleted": 0
+    },
+    {
+      "id": 2,
+      "name": "Peter Mutyaba",
+      "email": "peter.mutyaba@oyerabay.com",
+      "employeeId": "EMP002",
+      "role": "senior",
+      "specialties": ["Gearbox Oil & Filter", "Suspension Service", "Wheel Alignment"],
+      "status": "available",
+      "hoursWorked": 0,
+      "servicesCompleted": 0
+    },
+    {
+      "id": 3,
+      "name": "David Kagina",
+      "email": "david.kagina@oyerabay.com",
+      "employeeId": "EMP003",
+      "role": "technician",
+      "specialties": ["Brake Pads Change", "Brake Fluid Replacement", "Brake System Inspection"],
+      "status": "available",
+      "hoursWorked": 0,
+      "servicesCompleted": 0
+    },
+    {
+      "id": 4,
+      "name": "Moses Kasozi",
+      "email": "moses.kasozi@oyerabay.com",
+      "employeeId": "EMP004",
+      "role": "technician",
+      "specialties": ["Wheel Balancing", "Wheel Alignment", "Suspension Service"],
+      "status": "available",
+      "hoursWorked": 0,
+      "servicesCompleted": 0
+    },
+    {
+      "id": 5,
+      "name": "Henry Lubwama",
+      "email": "henry.lubwama@oyerabay.com",
+      "employeeId": "EMP005",
+      "role": "technician",
+      "specialties": ["Chassis Greasing", "General Inspection", "Engine Oil & Filter Change"],
+      "status": "available",
+      "hoursWorked": 0,
+      "servicesCompleted": 0
+    }
+  ],
+  "vehicles": [
+    {
+      "id": 1,
+      "type": "small",
+      "name": "Small Cars",
+      "description": "Saloons, hatchbacks, sedans",
+      "icon": "🚗"
+    },
+    {
+      "id": 2,
+      "type": "commercial",
+      "name": "Commercial Vehicles",
+      "description": "Vans, mini-buses, pickups",
+      "icon": "🚐"
+    },
+    {
+      "id": 3,
+      "type": "heavy",
+      "name": "Heavy Vehicles",
+      "description": "Trucks, buses, lorries",
+      "icon": "🚚"
+    }
+  ]
+}

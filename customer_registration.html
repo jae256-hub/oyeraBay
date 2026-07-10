@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url('garage.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(20, 32, 39);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .container-centered {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .page-title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: goldenrod;
+        margin-bottom: 40px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .form-container {
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .form-container .mb-4 {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: rgb(31, 60, 82);
+        margin-bottom: 0.5rem;
+    }
+
+    .form-control {
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        padding: 10px 15px;
+        font-size: 1rem;
+        transition: border-color 0.3s;
+    }
+
+    .form-control:focus {
+        border-color: rgb(31, 60, 82);
+        box-shadow: 0 0 0 0.2rem rgba(31, 60, 82, 0.25);
+    }
+
+    .form-check {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    .form-check-label {
+        margin-left: 8px;
+        font-size: 0.95rem;
+        cursor: pointer;
+    }
+
+    .terms-content {
+        display: none;
+        max-height: 300px;
+        overflow-y: auto;
+        background-color: #f0f0f0;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    .terms-content.show {
+        display: block;
+    }
+
+    .terms-content h3 {
+        font-size: 1rem;
+        color: rgb(31, 60, 82);
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .terms-content p {
+        margin-bottom: 8px;
+        color: #333;
+    }
+
+    .btn-container {
+        display: flex;
+        gap: 10px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-submit {
+        background-color: rgb(31, 60, 82);
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 100%;
+    }
+
+    .btn-submit:hover {
+        background-color: rgb(41, 80, 102);
+    }
+
+    .btn-home {
+        background-color: #6c757d;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 0.3s;
+        width: 100%;
+    }
+
+    .btn-home:hover {
+        background-color: #5a6268;
+        text-decoration: none;
+        color: white;
+    }
+
+    .message {
+        margin-top: 20px;
+        padding: 12px 15px;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 500;
+        display: none;
+    }
+
+    .message.show {
+        display: block;
+    }
+
+    .text-danger {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
+
+    .text-success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+
+    @media (max-width: 600px) {
+        .form-container {
+            padding: 25px;
+            max-width: 95%;
+        }
+
+        .page-title {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+        }
+
+        .btn-container {
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <div class="container-centered">
+        <h1 class="page-title"> CUSTOMER REGISTRATION </h1>
+        
+        <div class="form-container">
+            <form id="customerForm">
+                <div class="mb-4">
+                    <label for="customerEmail" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="customerEmail" placeholder="Enter your email">
+                    <div class="form-text">Your email is confidential and secure.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="customerPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="customerPassword" placeholder="Enter password (min 6 characters)">
+                </div>
+
+                <div class="mb-4">
+                    <label for="customerConfirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="customerConfirmPassword" placeholder="Confirm your password">
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="customerAgree">
+                    <label class="form-check-label" for="customerAgree">
+                        I agree to the Terms and Conditions
+                    </label>
+                    <button type="button" class="btn btn-link" style="padding: 0; margin-left: 5px;" onclick="document.querySelector('.terms-content').classList.toggle('show')">
+                        (View Terms)
+                    </button>
+                    
+                    <div class="terms-content">
+                        <h3>Terms and Conditions</h3>
+                        <p><strong>1. Acceptance of Terms</strong><br/>
+                        By accessing or using the Oyera Bay Service Website, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use the Service.</p>
+                        
+                        <p><strong>2. Changes to Terms</strong><br/>
+                        We may update these Terms from time to time. The latest version will always be posted here. Your continued use of the Service after changes means you accept the new Terms.</p>
+                        
+                        <p><strong>3. Use of the Service</strong><br/>
+                        You must be at least 18 years old to use this Service. You agree to use the Service only for lawful purposes. You will not attempt to damage, disrupt, or interfere with the Service.</p>
+                        
+                        <p><strong>4. Accounts</strong><br/>
+                        If you create an account, you are responsible for keeping your login details secure. You are responsible for all activity under your account. We reserve the right to suspend or delete accounts that violate these Terms.</p>
+                        
+                        <p><strong>5. Payments and Refunds</strong><br/>
+                        Any fees will be clearly displayed at the time of purchase. All payments are non-refundable unless required by law or stated otherwise in a separate refund policy.</p>
+                        
+                        <p><strong>6. Contact Us</strong><br/>
+                        For questions about these Terms, please contact us at: jmwesigwa272@gmail.com</p>
+                    </div>
+                </div>
+
+                <div id="customerMessage" class="message"></div>
+
+                <div class="btn-container">
+                    <button type="submit" class="btn-submit">✅ Register Now</button>
+                    <a href="index.html" class="btn-home"> Back to Home</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="validation.js"></script>
+</body>
+</html>

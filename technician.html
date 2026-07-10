@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technician Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+     @media screen and (max-width: 200px){
+        .main {
+            flex-direction: column;
+            flex-direction: row;
+        }
+        
+    }
+    .bg-primary {
+        padding: 20px;
+        font-display: fallback;
+        background-image:url('https://i.pinimg.com/736x/0b/5d/35/0b5d35434a73e5890aeb7f2a67780c0b.jpg');
+        background-size: cover;
+        background-position-x: center;
+        background-position-y:center ;
+        background-position: center;
+        background-repeat: no-repeat; 
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        min-width: 600px;
+        max-width: width 1500px;
+    }
+ .table {
+  width:800px;
+  height:500px;
+  position-area: center;
+  padding: 20px;
+  border: 24px;
+  table-layout: fixed;
+ }
+.mb-3 {
+  width: 700px;
+}
+</style>
+<body class="bg-primary">
+  
+   <nav class="nav nav-pills flex-column flex-sm-row">
+  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="index.html">Home Page</a>
+  <a class="flex-sm-fill text-sm-center nav-link " href="dashboard.html">Dashboard Page</a>
+  <a class="flex-sm-fill text-sm-center nav-link " href="technician.html">Technician Page</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="customer_registration.html">Customer Registration Page</a>
+  <a class="flex-sm-fill text-sm-center nav-link disabled" aria-disabled="true">Disabled</a>
+</nav>
+</nav>
+<h1>To Be Filled By Senior Technician</h1>
+<form>
+  <div class="mb-3">
+    <label for="exampleInputName" class="form-label">Technician's Name</label>
+    <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+    <div id="nameHelp" class="form-text">Your name is confidential.</div>
+  </div>
+   <div class="mb-3">
+    <label for="exampleInputCarType1" class="form-label">Car Type</label>
+    <input type="cartype" class="form-control" id="exampleInputCarType1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputCarTechnicality1" class="form-label">Car Technicality</label>
+    <input type="cartechnicality" class="form-control" id="exampleInputCarTechnicality1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputRecommendation1" class="form-label">Recommendation</label>
+    <input type="recommendation" class="form-control" id="exampleInputRecommendation1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Done</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<br/>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID NO.</th>
+      <th scope="col">Technician's Name</th>
+      <th scope="col">Specialty</th>
+      <th scope="col">Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">001</th>
+      <td>Musasizi Edmond</td>
+      <td>Brake Pads Repair</td>
+      <td>0773655097
+    </tr>
+    <tr>
+      <th scope="row">002</th>
+      <td>Mukiibi Isaac</td>
+      <td>Engines Repair</td>
+      <td>0772579579</td>
+    </tr>
+    <tr>
+      <th scope="row">003</th>
+      <td>Oyet Edmond</td>
+      <td>Wheel alignment</td>
+      <td>0773655077</td>
+    </tr>
+    <tr>
+        <th scope="row">004</th>
+        <td>Mohammed Saleh</td>
+        <td>Oil filters Replacement</td>
+        <td>0745654908</td>
+    </tr>
+    <tr>
+        <th scope="row">005</th>
+        <td>Michael Kelvin</td>
+        <td>Oil filters Replacement</td>
+        <td>0762190378</td>
+    </tr>
+     <tr>
+        <th scope="row">006</th>
+        <td>Mutyaba Joshua</td>
+        <td>Engine Repair</td>
+        <td>0762190307</td>
+    </tr>
+    <tr>
+        <th scope="row">007</th>
+        <td>Kisakye Joshua</td>
+        <td> Wheel alignment</td>
+        <td>0752190307</td>
+    </tr>
+    <tr>
+        <th scope="row">008</th>
+        <td>Makumbi Raymond</td>
+        <td> Wheel alignment</td>
+        <td>0752190307</td>
+    </tr>
+      <tr>
+        <th scope="row">008</th>
+        <td>Musa Muliisa</td>
+        <td> Oil Filters Replacement</td>
+        <td>0752190307</td>
+    </tr>
+    <tr>
+        <th scope="row">009</th>
+        <td>Kaliisa Adrian</td>
+        <td> Engine Repair</td>
+        <td>0752190388</td>
+    </tr>
+     <tr>
+        <th scope="row">010</th>
+        <td>Kaadu Victor</td>
+        <td> Overall</td>
+        <td>0773190307</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="oyera.js"></script>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyera Bay Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+    .p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size:24px;
+        font-style:italic;
+    }
+    .tea {
+        background-image: url('https://i.pinimg.com/736x/0b/5d/35/0b5d35434a73e5890aeb7f2a67780c0b.jpg');
+        background-size: cover;
+    }
+    .p {
+        align-items: center;
+        font-size: large;
+        font-style:italic;
+        font-weight: 600;
+        color: rgb(65, 107, 107);
+    }
+    .car {
+        align-items: right-align;
+    }
+    .m {
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font:italic;
+        font-weight: 500;
+        color:rgb(9, 22, 37);
+    }
+    .j {
+        font-size: large;
+        font-weight: 500;
+        font-style:italic;
+        color:rgb(20, 31, 31);
+    }
+    .bg primary {
+        font-size:large;
+        font-weight:500;
+        font-style:italic;
+        color:rgb(20, 31, 31);
+    }
+
+    .h1 {
+        font-style: italics;
+    }
+    .h2 {
+        font-style: italics;
+    }
+    @media screen and (max-width: 600px){
+        .main {
+            flex-direction: column;
+            flex-direction: row;
+        }
+        
+    }
+    .a:link {
+        color: rgb(38, 93, 146);
+    }
+    .a:visited {
+        color:rgb(104, 163, 104);
+
+    }
+ 
+
+    
+</style>
+<body class="tea">
+    <h1>WELCOME TO OYERA BAY SERVICE</h1>
+    <h2>THE BEST CAR SERVICERS IN UGANDA</h2>
+    <nav class="nav nav-pills flex-column flex-sm-row">
+  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="index.html">Home Page</a>
+  <a class="flex-sm-fill text-sm-center nav-link " href="dashboard.html">Dashboard Page</a>
+  <a class="flex-sm-fill text-sm-center nav-link " href="technician.html">Technician Page</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="customer_registration.html">Customer Registration Page</a>
+  <a class="flex-sm-fill text-sm-center nav-link disabled" aria-disabled="true">Disabled</a>
+</nav>
+
+    <div class="Vehicle type">
+        <h3 class="m">VEHICLE TYPES</h3>
+        <p class="j">Heavy Duty Vehicles<br/>
+            <img src="https://i.pinimg.com/1200x/23/6f/a1/236fa1ef7abcba3553c7a16e7adad16e.jpg" alt="heavy duty cars" width="500" height="500">
+        </p>
+        <p class="j">Small vehicles<br/>
+           <img src="https://i.pinimg.com/1200x/a9/a3/f6/a9a3f6842f790202e85e29df71118f1d.jpg" alt="small vehicles" width="500" height="500"> 
+        </p>
+        <p class="j">Commercial Vehicles<br/>
+             <img src="https://i.pinimg.com/1200x/61/86/dc/6186dcdcc55a6ca67e9ac3725c9f7f2f.jpg" alt="commercial vehicles" width="500" height="500">
+        </p>
+        
+
+        <select class="form-select" aria-label="Default select example">
+  <option class="bg primary" selected>Select Vehicle Type
+  <option value="1" id="heavyDuty">Heavy Duty Vehicles</option>
+  <option value="2" id="smallDuty">Small Vehicles</option>
+  <option value="3" id="commercialDuty">Commercial Vehicles</option>
+</select>
+    <div class="Services">
+        <h3 class="m">SERVICES OFFERED</h3>
+             <select class="form-select" aria-label="Default select example">
+  <option class="bg primary" selected>Select Service Type
+  <option value="1">Engine Oil & Filters @shs.92,000-shs.220,000</option>
+  <option value="2">Gearbox Oil & Filters @shs.15,000-shs.20,000</option>
+  <option value="3">Brake Pads Change @shs.13,000-shs.20,000</option>
+  <option value="4">Wheel alignment & Balance @shs.30,000</option>
+  <option value="5">Other minor repairs</option>
+</select>
+<br/>
+
+<p class="j">NB: All these exclude labour fee of shs.20,000</p>
+    </div>
+    <div class="car">
+        <img src="https://i.pinimg.com/1200x/41/f5/c6/41f5c68e06005373c8922f47aad22edc.jpg" width="800" height="800">
+        <a class="icon-link icon-link-hover link-success link-underline-success link-underline-opacity-25" href="https://www.mtn.co.ug/momo/">
+  Momo Pay
+  <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+    <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+  </svg>
+</a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="oyera.js"></script>
+</body>
+</html>

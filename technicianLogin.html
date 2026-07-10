@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technician Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url('https://i.pinimg.com/736x/0b/5d/35/0b5d35434a73e5890aeb7f2a67780c0b.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .container-centered {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .page-title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: rgb(31, 60, 82);
+        margin-bottom: 40px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .form-container {
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .form-container .mb-3 {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: rgb(31, 60, 82);
+        margin-bottom: 0.5rem;
+    }
+
+    .form-control {
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        padding: 10px 15px;
+        font-size: 1rem;
+        transition: border-color 0.3s;
+    }
+
+    .form-control:focus {
+        border-color: rgb(31, 60, 82);
+        box-shadow: 0 0 0 0.2rem rgba(31, 60, 82, 0.25);
+    }
+
+    .form-check {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    .form-check-label {
+        margin-left: 8px;
+        font-size: 0.95rem;
+        cursor: pointer;
+    }
+
+    .btn-container {
+        display: flex;
+        gap: 10px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-submit {
+        background-color: rgb(31, 60, 82);
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 100%;
+    }
+
+    .btn-submit:hover {
+        background-color: rgb(41, 80, 102);
+    }
+
+    .btn-home {
+        background-color: #6c757d;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 0.3s;
+        width: 100%;
+    }
+
+    .btn-home:hover {
+        background-color: #5a6268;
+        text-decoration: none;
+        color: white;
+    }
+
+    .message {
+        margin-top: 20px;
+        padding: 12px 15px;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 500;
+        display: none;
+    }
+
+    .message.show {
+        display: block;
+    }
+
+    .text-danger {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
+
+    .text-success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+
+    @media (max-width: 600px) {
+        .form-container {
+            padding: 25px;
+            max-width: 95%;
+        }
+
+        .page-title {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+        }
+
+        .btn-container {
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <div class="container-centered">
+        <h1 class="page-title">🔧 TECHNICIAN LOGIN 🔧</h1>
+        
+        <div class="form-container">
+            <form id="technicianForm">
+                <div class="mb-3">
+                    <label for="technicianName" class="form-label">Technician Name</label>
+                    <input type="text" class="form-control" id="technicianName" placeholder="Enter your full name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="technicianEmail" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="technicianEmail" placeholder="Enter your email">
+                    <div class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="technicianEmployeeNumber" class="form-label">Employee Number</label>
+                    <input type="number" class="form-control" id="technicianEmployeeNumber" placeholder="Enter your employee number">
+                </div>
+
+                <div class="mb-3">
+                    <label for="technicianPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="technicianPassword" placeholder="Enter password (min 6 characters)">
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="technicianAgree">
+                    <label class="form-check-label" for="technicianAgree">
+                        I confirm the information is correct
+                    </label>
+                </div>
+
+                <div id="technicianMessage" class="message"></div>
+
+                <div class="btn-container">
+                    <button type="submit" class="btn-submit">✅ Login</button>
+                    <a href="index.html" class="btn-home"> Back to Home</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="validation.js"></script>
+</body>
+</html>
